@@ -1,11 +1,11 @@
 import React from "react";
 
-const Navigation = ({ onClick }) => {
+const Navigation = ({ onRouteChange }) => {
   return (
     <nav style={{ display: "flex", justifyContent: "flex-end" }}>
       <p
-        className="f4 link dim black underline mt3 mr4 pointer"
-        onClick={onClick}
+        onClick={() => onRouteChange("signin")}
+        className="f3 link dim black underline mr3 pointer"
       >
         Sign Out
       </p>
